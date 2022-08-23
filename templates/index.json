@@ -14,7 +14,9 @@
         "5789e54e-3f83-4950-b93c-73c784b487e9": {
           "type": "collection",
           "settings": {
-            "collection": "denim"
+            "collection": "denim",
+            "image_bg": "shopify:\/\/shop_images\/hero-denim.png",
+            "image_hover": "shopify:\/\/shop_images\/collection-denim.png"
           }
         },
         "136a5b77-230d-46a2-8737-ce9ee503cc18": {
