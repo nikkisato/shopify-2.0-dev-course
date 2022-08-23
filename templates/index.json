@@ -18,7 +18,9 @@
         "136a5b77-230d-46a2-8737-ce9ee503cc18": {
           "type": "collection",
           "settings": {
-            "collection": "back-to-work"
+            "collection": "back-to-work",
+            "image_bg": "shopify:\/\/shop_images\/hero-beach.png",
+            "image_hover": "shopify:\/\/shop_images\/hero-beach-hover.png"
           }
         }
       },
