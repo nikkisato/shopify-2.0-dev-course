@@ -16,7 +16,7 @@
           "settings": {
             "collection": "denim",
             "image_bg": "shopify:\/\/shop_images\/hero-denim.png",
-            "image_hover": "shopify:\/\/shop_images\/collection-denim.png"
+            "image_hover": "shopify:\/\/shop_images\/hero-denim-hover.png"
           }
         },
         "136a5b77-230d-46a2-8737-ce9ee503cc18": {
@@ -24,7 +24,7 @@
           "settings": {
             "collection": "back-to-work",
             "image_bg": "shopify:\/\/shop_images\/hero-work.png",
-            "image_hover": "shopify:\/\/shop_images\/collection-dresses.png"
+            "image_hover": "shopify:\/\/shop_images\/hero-work-hover.png"
           }
         }
       },
