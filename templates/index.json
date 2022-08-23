@@ -6,12 +6,26 @@
         "ca81f4d1-f3e4-4cb2-a9f1-ec84e9aba4f7": {
           "type": "collection",
           "settings": {
-            "collection": ""
+            "collection": "beach"
+          }
+        },
+        "5789e54e-3f83-4950-b93c-73c784b487e9": {
+          "type": "collection",
+          "settings": {
+            "collection": "denim"
+          }
+        },
+        "136a5b77-230d-46a2-8737-ce9ee503cc18": {
+          "type": "collection",
+          "settings": {
+            "collection": "back-to-work"
           }
         }
       },
       "block_order": [
-        "ca81f4d1-f3e4-4cb2-a9f1-ec84e9aba4f7"
+        "ca81f4d1-f3e4-4cb2-a9f1-ec84e9aba4f7",
+        "5789e54e-3f83-4950-b93c-73c784b487e9",
+        "136a5b77-230d-46a2-8737-ce9ee503cc18"
       ],
       "settings": {
       }
