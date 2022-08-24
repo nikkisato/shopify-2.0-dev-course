@@ -1,6 +1,18 @@
 {{ 'section-collection-grid.css' | asset_url | stylesheet_tag }}
 
-
+<div>
+    <h2>{{ section.settings.header }}</h2>
+    <div>
+        {% for block in section.blocks %}
+        <a href="{{ block.settings.collection.url }}">
+            <div>
+                <img src="{{ block.settings.collection.image | img_url: "Large" }}" alt="">
+                <h3>{{ block.settings.collection.title }}</h3>
+            </div>
+        </a>
+        {% endfor %}
+    </div>
+</div>
 
 {% schema %}
 {
@@ -16,7 +28,6 @@
     {
         "type":"collection",
         "limit": 4,
-        "id": "collection",
         "name": "Collection",
         "settings":[
         {
