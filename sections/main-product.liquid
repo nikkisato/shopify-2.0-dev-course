@@ -693,6 +693,27 @@
                   </span>
                 </p>
               {%- endif -%}
+            {%- when 'social' -%}
+              <ul class="social-sharing">
+                <li>
+                  <a href="{{ settings.social_facebook_link }}">
+                    {% render 'icon-facebook' %}
+                    <span class="social-sharing__title">Facebook</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="{{ settings.social_pinterest_link }}">
+                    {% render 'icon-pinterest' %}
+                    <span class="social-sharing__title">Pinterest</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="{{ settings.social_twitter_link }}">
+                    {% render 'icon-twitter' %}
+                    <span class="social-sharing__title">Twitter</span>
+                  </a>
+                </li>
+              </ul>
           {%- endcase -%}
         {%- endfor -%}
         <a href="{{ product.url }}" class="link product__view-details animate-arrow">
@@ -1434,6 +1455,17 @@
         {
           "type": "paragraph",
           "content": "t:sections.main-product.blocks.rating.settings.paragraph.content"
+        }
+      ]
+    },
+    {
+      "type": "social",
+      "name": "social",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "paragraph",
+          "content": "social"
         }
       ]
     }

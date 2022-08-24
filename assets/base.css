@@ -3009,3 +3009,41 @@ details-disclosure > details {
   transform: translate(-50%, -50%);
   position: absolute;
 }
+.social-sharing {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+}
+
+.social-sharing a {
+  display: flex;
+  align-items: center;
+  margin-right: 5px;
+  padding: 8px 10px;
+  text-decoration: none;
+  color: #fff;
+  background-color: rgb(var(--color-foreground));
+  font-family: var(--font-heading-family);
+  text-transform: uppercase;
+}
+.social-sharing__title {
+}
+
+.social-sharing .icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+}
+
+.social-sharing .icon-facebook {
+  color: #3b5998;
+}
+
+.social-sharing .icon-pinterest {
+  color: #cb2027;
+}
+
+.social-sharing .icon-twitter {
+  color: #00aced;
+}
