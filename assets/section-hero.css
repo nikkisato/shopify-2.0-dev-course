@@ -63,6 +63,7 @@
   margin: 0;
   opacity: 1;
   transition: opacity 0.3s;
+  color: #fff;
 }
 
 .hero-collections__card:hover > .hero-collections__card-title,
@@ -82,7 +83,6 @@
   left: 50%;
   border-radius: 4px;
   transform: translate(-50%, -50%);
-  display: block;
   opacity: 1;
   transition: opacity 0.3s;
 }
@@ -98,7 +98,6 @@
   left: 50%;
   border-radius: 4px;
   transform: translate(-50%, -50%);
-  display: block;
   opacity: 0;
   transition: none;
 }
@@ -113,6 +112,10 @@
     height: 200px;
     width: 240px;
   }
+
+  .hero-collection__card-container {
+    flex-direction: row;
+  }
 }
 
 @media screen and (min-width: 900px) {
@@ -120,11 +123,18 @@
     height: 230px;
     width: 290px;
   }
+  .hero-collection__card-container {
+    width: 970px;
+    margin: 0 auto;
+  }
 }
 
 @media screen and (min-width: 1200px) {
   .hero-collections__card {
     height: 270px;
     width: 330px;
+  }
+  .hero-collection__card-container {
+    width: 1050px;
   }
 }

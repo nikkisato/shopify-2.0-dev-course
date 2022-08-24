@@ -11,9 +11,9 @@
 <div class="hero-collections">
     <div class="hero-collections__card-container">
         {% for block in section.blocks %}
-            <a class="hero-collections__card" href="">
-                <div class="hero-collections__card--bg" style="background-image: url({{ block.settings.image_bg.src | img_url: 'Medium' }})"​​​​​​​></div>
-                <div class="hero-collections__card--hover"  style="background-image: url({{ block.settings.image_hover.src | img_url: 'Medium' }})"></div>
+            <a class="hero-collections__card" href="{{ block.settings.collection.url }}">
+                <div class="hero-collections__card--bg" style="background-image: url({{ block.settings.image_bg | img_url: 'Medium' }})"​​​​​​​></div>
+                <div class="hero-collections__card--hover"  style="background-image: url({{ block.settings.image_hover| img_url: 'Medium' }})"></div>
                 <h3 class="hero-collections__card-title">{{ block.settings.collection.title | downcase }}</h3>
             </a>
         {% endfor %}
@@ -27,7 +27,7 @@
     "blocks":[
         {
             "type": "collection",
-            "limit":3,
+            "limit": 3,
             "name": "Collection",
             "settings": [
                 {
@@ -37,12 +37,12 @@
                 },
                 {
                     "type": "image_picker",
-                    "id":"image_bg",
+                    "id": "image_bg",
                     "label": "Image Background"
                 },
                 {
                     "type": "image_picker",
-                    "id":"image_hover",
+                    "id": "image_hover",
                     "label": "Image Hover"
                 }
             ]
