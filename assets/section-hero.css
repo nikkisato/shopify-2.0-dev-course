@@ -82,7 +82,7 @@
   top: 50%;
   left: 50%;
   border-radius: 4px;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) !important;
   opacity: 1;
   transition: opacity 0.3s;
 }
@@ -149,7 +149,6 @@
 
 .parallax-one {
   top: 100px;
-  left: -190px;
   height: 750px;
   width: 320px;
 }
@@ -162,7 +161,7 @@
 @media screen and (min-width: 600px) {
   .parallax-one {
     top: 70px;
-    left: -160px;
+    left: 0;
   }
 }
 
@@ -170,7 +169,7 @@
   .parallax-one {
     height: 900px;
     top: -39px;
-    left: -200px;
+    left: 0;
   }
 }
 
@@ -182,13 +181,13 @@
 
 @media screen and (min-width: 1100px) {
   .parallax-one {
-    left: -160px;
+    left: 0;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .parallax-one {
-    left: -130px;
+    left: 0;
   }
 }
 
@@ -228,7 +227,7 @@
 
 @media screen and (min-width: 1100px) {
   .parallax-two {
-    right: -150px;
+    right: -10px;
   }
 }
 
