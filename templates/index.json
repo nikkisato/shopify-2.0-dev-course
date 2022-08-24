@@ -35,9 +35,16 @@
       ],
       "settings": {
       }
+    },
+    "1661313124b7523777": {
+      "type": "weekly-picks",
+      "settings": {
+        "collection": "weekly-picks"
+      }
     }
   },
   "order": [
-    "166128827258aa7ebf"
+    "166128827258aa7ebf",
+    "1661313124b7523777"
   ]
 }
