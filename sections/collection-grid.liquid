@@ -1,13 +1,13 @@
 {{ 'section-collection-grid.css' | asset_url | stylesheet_tag }}
 
-<div>
-    <h2>{{ section.settings.header }}</h2>
-    <div>
+<div class="collection-grid-container">
+    <h2 class="collection-grid__title">{{ section.settings.header }}</h2>
+    <div class="collection-grid__grid-container">
         {% for block in section.blocks %}
-        <a href="{{ block.settings.collection.url }}">
-            <div>
+        <a class="collection-grid__grid-item" href="{{ block.settings.collection.url }}">
+            <div class="collection-grid__img-container">
                 <img src="{{ block.settings.collection.image | img_url: "Large" }}" alt="">
-                <h3>{{ block.settings.collection.title }}</h3>
+                <h3 class="collection-grid__grid-title">{{ block.settings.collection.title }}</h3>
             </div>
         </a>
         {% endfor %}
