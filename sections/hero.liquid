@@ -9,9 +9,13 @@
 <div  class="hero-collections">
     <div class="hero-collections__card-container">
         {% for block in section.blocks %}
+        {% liquid 
+            assign imageBg = block.settings.image_bg
+            assign imageHover = block.settings.image_hover
+        %}
             <a class="hero-collections__card" href="">
-                <div class="hero-collections__card--bg" style="background-image: url('{{ block.settings.image_bg | image_url: 'Medium' }}')"></div>
-                <div class="hero-collections__card--hover"  style="background-image: url('{{ block.settings.image_hover | image_url: 'Medium' }}')"></div>
+                <div class="hero-collections__card--bg" style="background-image: url('{{ imageBg | image_url: height: 630 }}')"​​​​​​​></div>
+                <div class="hero-collections__card--hover"  style="background-image: url('{{ imageHover | image_url: height: 630 }}')"></div>
                 <h3 class="hero-collections__card-title">{{ block.settings.collection.title | downcase }}</h3>
             </a>
         {% endfor %}
